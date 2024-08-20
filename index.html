@@ -103,13 +103,14 @@ layout: home
         <p>
           This is the community you’ve been waiting for. Join our email list to stay connected as we build our offerings to support your journey towards confident, value-centered, affirming care for your perfectly Autistic child.
         </p>
-        <form>
-          <input type="text" name="text" placeholder="Your name" aria-label="Your name">
-          <input type="email" name="email" placeholder="Email" aria-label="Email" autocomplete="email">
-          <div class="button-wrapper">
-            <button type="submit">Keep me in the loop</button>
-          </div>
-        </form>
+        {% include partials/_signup.html %}
+        <!-- <form>
+             <input type="text" name="text" placeholder="Your name" aria-label="Your name">
+             <input type="email" name="email" placeholder="Email" aria-label="Email" autocomplete="email">
+             <div class="button-wrapper">
+             <button type="submit">Keep me in the loop</button>
+             </div>
+             </form> -->
       </div>
       <div class="rphoto">
         <img src="/assets/images/collaborating.jpg">
