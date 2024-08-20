@@ -1,7 +1,29 @@
 @import "variables";
 
-footer {
+body > footer {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  padding-block-end: 0px;
+
   .container-fluid {
     background-color: $purple;
+  }
+
+  .container {
+    padding: 2rem 0;
+
+    > div {
+      padding: 0.5rem 0;
+    }
+  }
+
+  .social-links {
+    a {
+      display: inline-block;
+    }
+    img {
+      height: 50px;
+      width: 50px;
+    }
   }
 }

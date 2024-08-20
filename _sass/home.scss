@@ -1,5 +1,13 @@
 @import "variables";
 
+h1, h2 {
+  letter-spacing: 0.5px;
+}
+
+p {
+  letter-spacing: 0.45px;
+}
+
 section.blue {
   background-color: $light-blue;
   color: $white-text-color;
@@ -63,6 +71,8 @@ section.blockquote {
   margin-bottom: 3rem;
 }
 
+
+
 .yellow {
   .yellow-content {
     display: grid;
@@ -70,9 +80,15 @@ section.blockquote {
     padding: 1rem;
     letter-spacing: 0.5px;
 
-    div div {
+    p:last-of-type {
+      padding-top: 1rem;
       text-align: center;
-      padding-bottom: 1rem
+      font-size: 1.25rem;
+    }
+
+    .button-space {
+      text-align: center;
+      padding-bottom: 1rem;
 
       button {
         color: $white;
@@ -84,12 +100,6 @@ section.blockquote {
     @media (min-width: $large-rem) {
       grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
-
-      p:last-of-type {
-        padding-top: 1rem;
-        text-align: center;
-        font-size: 1.25rem;
-      }
     }
   }
 }
@@ -97,6 +107,16 @@ section.blockquote {
 .community-and-email {
   > .container:first-of-type {
     position: relative;
+  }
+
+  .community-section {
+    display: grid;
+
+    @media (min-width: $xlarge-rem) {
+      grid-gap: 2rem;
+      grid-template-columns: 1fr 400px;
+      padding: 1rem 0;
+    }
   }
   .community-copy {
     margin-bottom: 2rem;
@@ -108,10 +128,6 @@ section.blockquote {
     div {
       text-align: center;
     }
-
-    @media (min-width: $xlarge-rem) {
-      width: 60vw;
-    }
   }
 
   .right-color-splash {
@@ -120,6 +136,7 @@ section.blockquote {
       background-color: $light-purple;
       right: 0px;
       top: 0px;
+      max-width: 400px;
       width: 20vw;
       height: 100%;
       z-index: -1;
@@ -128,7 +145,11 @@ section.blockquote {
 
   .horizontal.section-divider {
     @media (min-width: $xlarge-rem) {
-      width: 60vw;
+      display: grid;
+
+      grid-gap: 2rem;
+      grid-template-columns: 1fr 400px;
+      padding: 1rem 0;
     }
   }
 
@@ -138,7 +159,7 @@ section.blockquote {
 
     @media (min-width: $large-rem ) {
       grid-gap: 2rem;
-      grid-template-columns: minmax(40vw, 60vw) 400px;
+      grid-template-columns: 1fr 400px;
       padding: 1rem 0;
 
       .rphoto {
@@ -147,13 +168,16 @@ section.blockquote {
     }
 
     @media (min-width: $xxlarge-rem) {
-      grid-template-columns: minmax(40vw, 60vw) 600px;
+      grid-template-columns: 1fr 600px;
     }
   }
 
   .email-copy {
-    @media (min-width: $xlarge-rem) {
-      width: 50vw;
+    .button-wrapper {
+      text-align: center;
+      button {
+        width: auto;
+      }
     }
   }
 }

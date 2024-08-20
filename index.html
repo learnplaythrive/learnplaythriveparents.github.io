@@ -57,11 +57,11 @@ layout: home
         <p>
           Our courses help you get there.
         </p>
-        <div>
-          <button class="outline">
-            View our courses
-          </button>
-        </div>
+        <!-- <div class="button-space">
+             <button class="outline">
+             View our courses
+             </button>
+             </div> -->
       </div>
       <div class="section-photo">
         <img src="/assets/images/kids-at-play.jpg" />
@@ -74,22 +74,26 @@ layout: home
 
 <section class="community-and-email">
   <div class="container">
-    <div class="community-copy">
-      <h2>
-        Community
-      </h2>
-      <p>
-        Be a part of the most supportive community of parents and caregivers you’ve ever experienced. The Learn Play Thrive Parent community is a space where parents and caregivers come together to share resources, care for each others’ experiences, and have each other’s back. We are actively building a space that says no to ableism and yes to access needs and intersectionality. It’s brand new, and we want you there.
-      </p>
-      <div>
-        <button class="outline">
-          Join the community
-        </button>
+    <div class="community-section">
+      <div class="community-copy">
+        <h2>
+          Community
+        </h2>
+        <p>
+          Be a part of the most supportive community of parents and caregivers you’ve ever experienced. The Learn Play Thrive Parent community is a space where parents and caregivers come together to share resources, care for each others’ experiences, and have each other’s back. We are actively building a space that says no to ableism and yes to access needs and intersectionality. It’s brand new, and we want you there.
+        </p>
+        <div>
+          <button class="outline">
+            Join the community
+          </button>
+        </div>
       </div>
+      <div></div>
     </div>
     <div class="right-color-splash"></div>
     <div class="horizontal section-divider">
       {% include partials/_divider.html %}
+      <div></div>
     </div>
     <div class="email">
       <div class="email-copy">
@@ -102,6 +106,9 @@ layout: home
         <form>
           <input type="text" name="text" placeholder="Your name" aria-label="Your name">
           <input type="email" name="email" placeholder="Email" aria-label="Email" autocomplete="email">
+          <div class="button-wrapper">
+            <button type="submit">Keep me in the loop</button>
+          </div>
         </form>
       </div>
       <div class="rphoto">
