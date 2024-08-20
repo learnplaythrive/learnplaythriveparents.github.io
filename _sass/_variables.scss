@@ -1,0 +1,29 @@
+/*
+ * Colors
+ */
+$yellow: #FFF6A7;
+$purple: #D7A6D8;
+$light-yellow: #FCF7D1;
+$light-purple: #FFE2FF;
+$white: #FFFFFF;
+$text-white: #F5F5F5;
+$black: #121619;
+$light-blue: #7EBCEB;
+$blue: #345D93;
+
+$small-rem: 36rem; // 576px
+$medium-rem: 48rem; // 768px
+$large-rem: 64rem; // 1024px
+$xlarge-rem: 80rem; // 1280px
+$xxlarge-rem: 96rem; // 1536px
+
+$alt-text-family: "Lexend Deca", sans-serif;
+
+
+$text-color: $black !default;
+$white-text-color: $text-white !default;
+$background-color: $white !default;
+$link-base-color: $blue !default;
+$link-visited-color: $purple !default;
+$link-active-color: $yellow !default;
+$link-hover-color: $yellow !default;

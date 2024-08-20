@@ -1,0 +1,33 @@
+.divider  {
+  height:200px;
+  width: 30px;
+
+  > div {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 20px 0;
+
+    background: radial-gradient(circle,  #FFD700 0%, #FFF6A7 80%);
+  }
+  .mid {
+    background: radial-gradient(circle, #69a6d5 00%, #004A7C 100%);
+  }
+
+  .bottom {
+    background: radial-gradient(circle, #FFE2FF 0%, #FFC0CB 60%);
+  }
+}
+
+.horizontal {
+  .divider {
+    margin: 0 auto;
+    display: flex;
+    width: 150px;
+    height: 30px;
+
+    > div {
+      margin: 0 10px;
+    }
+  }
+}
