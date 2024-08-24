@@ -80,6 +80,10 @@ section.blockquote {
     padding: 1rem;
     letter-spacing: 0.5px;
 
+    .yellow-copy {
+      padding: 1rem;
+    }
+
     p:last-of-type {
       padding-top: 1rem;
       text-align: center;
@@ -127,6 +131,10 @@ section.blockquote {
 
     div {
       text-align: center;
+
+      button:hover {
+        background-color: #CBEAFF;
+      }
     }
   }
 

@@ -28,6 +28,7 @@ domain: learnplaythriveparents.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://learnplaythiveparents.github.io # the base hostname & protocol for your site, e.g. http://example.com
 logo: assets/images/logo.svg
+lpt: https://www.learnplaythrive.com
 
 sass:
   sass_dir: _sass
