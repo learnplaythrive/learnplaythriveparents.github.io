@@ -17,6 +17,19 @@ button {
 
 }
 
+:where(a:not([role=button])) {
+  color: $black;
+}
+
+hr {
+  display: block;
+  height: 15px;
+  border: 0px;
+  background-image: url('/assets/images/blue-squiggle-line.png');
+  background-size: contain;
+}
+
+
 blockquote{
   font-family: $alt-text-family;
   padding:1.2rem 30px 1.2rem 60px;

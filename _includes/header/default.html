@@ -1,15 +1,17 @@
 <div class="container">
   <nav>
-    <ul>
-      <li><strong>Sample Link</strong></li>
-      <li><strong>Sample Link</strong></li>
-      <li><strong>Sample Link</strong></li>
+    <ul class="menu">
+      <menu>
+        <li><a href="{{ 'articles' | relative_url }}"><strong>Articles</strong></a></li>
+        <li><a href="{{ 'trainings' | relative_url}}"><strong>Trainings</strong></a></li>
+        <li><a href="{{ 'about' | relative_url}}"><strong>About</strong></a></li>
+      </menu>
     </ul>
     <ul>
-      <img src="{{site.logo}}" />
+      <a href="{{ site.url }}"><img src="{{ site.logo | relative_url}}" /></a>
     </ul>
     <ul>
-      <span>Are you a professional, go <a href="{{site.lpt}}">here</a> instead!</span>
+      <span></span>
     </ul>
   </nav>
 </div>

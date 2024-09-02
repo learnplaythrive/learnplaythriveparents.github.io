@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="container collection {{page.collection_type}}">
+  <section>
+    <div class="page-header">
+      <div class="copy">
+        <h1>{{ page.collection_type | capitalize }}</h1>
+        <hr />
+        <p>{{ page.subtext | newline_to_br }}</p>
+      </div>
+      <div class="image">
+        <img src="{{ page.image_path }}"/>
+      </div>
+    </div>
+  </section>
+
+  <div class="collection-items">
+    {{content}}
+  </div>
+</div>

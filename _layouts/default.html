@@ -1,19 +1,21 @@
 ---
-header: header/default.html
 header_class: default
+header: header/default.html
+
 ---
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
   <head>
     {%- include head.html %}
     {%- include styles.html %}
+    {% seo %}
   </head>
   <title>
     {{ site.title }}
   </title>
   <body>
-    <header class="{{layout.header_class}}">
-      {% include {{ layout.header }} %}
+    <header class="{{ layout.header_class }}">
+      {% include {{ layout.header }}  %}
     </header>
     <main>
       {{ content }}

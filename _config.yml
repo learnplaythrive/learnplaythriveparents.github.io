@@ -19,17 +19,22 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Learn Play Thrive for Parents
-email: your-email@example.com
+email: admin@learnplaythrive.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-domain: learnplaythriveparents.github.io
-baseurl: "" # the subpath of your site, e.g. /blog
+  Neurodiversity-affirming trainings for parents and caregivers to help your
+  Autistic child thrive in their daily life. Learn a strengths-based approach!
+domain: learnplaythrive.com
 github_url: https://learnplaythrive.github.io/learnplaythriveparents.github.io/ # the base hostname & protocol for your site, e.g. http://example.com
-url: https://learnplaythrive.github.io/learnplaythriveparents.github.io/ # the base hostname & protocol for your site, e.g. http://example.com
+url: https://parents.learnplaythrive.com
 logo: assets/images/logo.svg
 lpt: https://www.learnplaythrive.com
+fb_group: https://www.facebook.com/groups/learnplaythriveparents
+
+social:
+  name: Learn Play Thrive for Parents
+  links:
+    - https://www.facebook.com/learnplaythriveparents
+    - https://www.instagram.com/learnplaythriveparents
 
 sass:
   sass_dir: _sass
@@ -39,6 +44,7 @@ sass:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

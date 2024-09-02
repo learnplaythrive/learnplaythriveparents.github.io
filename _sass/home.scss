@@ -57,7 +57,7 @@ section.blue {
 }
 
 section.blockquote {
-  margin-top: 100px;
+  margin-top: 50px;
 
   @media (min-width: $large-rem ) {
     .container {
@@ -79,6 +79,7 @@ section.blockquote {
     background-color: $yellow;
     padding: 1rem;
     letter-spacing: 0.5px;
+    align-items: center;
 
     .yellow-copy {
       padding: 1rem;
@@ -141,7 +142,7 @@ section.blockquote {
   .right-color-splash {
     @media (min-width: $xlarge-rem) {
       position: absolute;
-      background-color: $light-purple;
+      background-color: $purple;
       right: 0px;
       top: 0px;
       max-width: 400px;

@@ -5,30 +5,32 @@ nav {
     max-height: 125px;
   }
 
-  @media (min-width: $large-rem) {
-    img {
-      max-height: 200px;
-    }
+  justify-content: center;
 
-    ul menu {
+  ul {
+    align-self: center;
+  }
 
-    }
 
-    ul:first-child, ul:last-child {
-      flex-grow: 1;
-      flex-basis: 0;
-    }
+  @media (min-width: $medium-rem) {
+    justify-content: space-between;
+  }
 
-    ul:last-child {
-      li {
-        text-align: right;
-        width: 100%;
-      }
+  ul.menu {
+    display: none;
+
+    @media (min-width: $medium-rem) {
+      display: block;
     }
   }
 
   ul menu {
     display: none;
+
+    :where(a:not([role=button])) {
+      text-decoration: none;
+      color: $text-color;
+    }
 
     @media (min-width: $medium-rem) {
 
@@ -48,4 +50,73 @@ nav {
       }
     }
   }
+
+  @media (min-width: $large-rem) {
+    img {
+      max-height: 200px;
+    }
+
+    ul menu {
+    }
+
+    ul:first-child, ul:last-child {
+      flex-grow: 1;
+      flex-basis: 0;
+    }
+
+    ul:last-child {
+      li {
+        text-align: right;
+        width: 100%;
+      }
+    }
+  }
+
+  .are-you-a-professional {
+    font-size: 0.8rem;
+    letter-spacing: 0.25px;
+    text-align: right;
+
+    /* the amount of things you have to do for chrome */
+    .small-br {
+      display:block;
+      content:"";
+      margin-top: 0px;
+      line-height: 5px;
+    }
+  }
+}
+
+
+header.default nav {
+  ul.menu, ul menu {
+    display: block;
+    margin-block-start: 0rem;
+    padding-inline-start: 0rem;
+    width: 100%;
+    text-align: center;
+  }
+  flex-direction: column-reverse;
+
+  ul:last-of-type {
+    display: none;
+  }
+
+  @media (min-width: $medium-rem) {
+    flex-direction: row;
+
+    ul, ul:last-of-type {
+      display: block;
+    }
+  }
+
+
+  // flex-direction: row-reverse;
+}
+
+header {
+  @media ( mim-width: $medium-rem ) {
+    min-width: $medium-rem;
+  }
+
 }

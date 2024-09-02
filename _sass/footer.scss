@@ -4,9 +4,10 @@ body > footer {
   padding-bottom: 0px;
   margin-bottom: 0px;
   padding-block-end: 0px;
+  color: $white;
 
   .container-fluid {
-    background-color: $purple;
+    background-color: $light-purple;
   }
 
   .container {

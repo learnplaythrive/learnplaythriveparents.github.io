@@ -1,15 +1,26 @@
 /*
  * Colors
  */
-$yellow: #FFF6A7;
-$purple: #D7A6D8;
-$light-yellow: #FCF7D1;
-$light-purple: #FFE2FF;
+// $yellow: #FFF6A7;
+// $purple: #D7A6D8;
+// $light-yellow: #FCF7D1;
+// $light-purple: #FFE2FF;
+// $white: #FFFFFF;
+// $text-white: #F5F5F5;
+// $black: #121619;
+// $light-blue: #7EBCEB;
+// $blue: #345D93;
+
+// new colors
+$yellow: #FDEC4C;
+$light-yellow: $yellow;
+$purple:  #9451A0;
+$blue: #3698D4;
+$light-blue: $blue;
 $white: #FFFFFF;
 $text-white: #F5F5F5;
 $black: #121619;
-$light-blue: #7EBCEB;
-$blue: #345D93;
+$light-purple: #B37AB4;
 
 $small-rem: 36rem; // 576px
 $medium-rem: 48rem; // 768px
