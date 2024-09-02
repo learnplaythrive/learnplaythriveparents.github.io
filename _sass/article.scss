@@ -1,0 +1,25 @@
+@import "variables";
+
+.container.article {
+  @media (min-width: $large-rem) {
+    max-width: 48rem;
+  }
+
+  .author-block {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: var(--pico-color);
+  }
+
+  .image-pull-right {
+    float: right;
+  }
+  .image-pull-left {
+    float: left;
+  }
+  .image-center {
+    text-align: center;
+  }
+}

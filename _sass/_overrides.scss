@@ -1,3 +1,5 @@
+@import "variables";
+
 :root {
   --pico-font-family-sans-serif: "Source Sans 3", sans-serif, var(--pico-font-family-emoji);
   --pico-primary: $blue;
@@ -30,9 +32,9 @@ hr {
 }
 
 
-blockquote{
+blockquote {
   font-family: $alt-text-family;
-  padding:1.2rem 30px 1.2rem 60px;
+  padding: 1.2rem 30px 1.2rem 60px;
   position: relative;
   letter-spacing: 0.75px;
   border: 0px;
@@ -54,7 +56,26 @@ blockquote::after{
   font-size:4em;
   position: absolute;
   right: -10px;
-  bottom:-50px;
+  bottom: 0px;
+}
+
+@media (max-width: 24rem) {
+  blockquote {
+    padding:1.2rem 15px 1.2rem 18px;
+  }
+
+  blockquote::before{
+    font-size:3em;
+    left: -8px;
+    top: 0px;
+  }
+
+  blockquote::after{
+    font-size:3em;
+    right: -8px;
+    bottom: 30px;
+  }
+
 }
 
 blockquote footer {

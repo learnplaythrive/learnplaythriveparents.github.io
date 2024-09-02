@@ -4,6 +4,9 @@
     align-items: center;
     padding: 1rem;
 
+    hr {
+      background-image: url('/assets/images/purple-squiggle-line.png');
+    }
 
     @media (max-width: $large-rem) {
 
@@ -49,6 +52,7 @@
       padding: 0rem;
       grid-gap: 2rem;
       grid-template-columns: minmax(400px, 1fr) minmax(400px, 1fr);
+      margin-bottom: 2rem;
     }
 
     @media (min-width: $xlarge-rem) {
@@ -63,8 +67,30 @@
     }
   }
 
-  .collection-item:nth-of-type(5n - 4) {
-    // background-color: $light-yellow;
+  @mixin reverse {
+    .content {
+      order: 2;
+    }
+
+    .image {
+      order: 1;
+    }
+  }
+
+  .collection-item:nth-of-type(2n+1) {
+    @include reverse;
+  }
+
+  .collection-item:nth-of-type(4n-3) {
+    background-color: $light-yellow;
+  }
+
+  .collection-item:nth-of-type(4n-2), .collection-items:nth-of-type(4n) {
+    //white
+    background-color: $white;
+  }
+
+  .collection-item:nth-of-type(4n-1) {
     background-color: $blue;
     color: $white;
 
@@ -75,13 +101,6 @@
     h2 a, p a{
       color: $white;
     }
-  }
-
-  .collection-item:nth-of-type(5n - 3), .collection-items:nth-of-type(5n - 1) {
-    //white
-  }
-
-  .collection-item:nth-of-type(5n - 2) {
 
   }
 }

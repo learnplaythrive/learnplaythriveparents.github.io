@@ -1,12 +1,12 @@
-.yellow-divider-color {
+%yellow-divider-color {
   background: linear-gradient(#FFE75C, #FFD23B);
   box-shadow: 0px 0px 4px rgba(255, 231, 92, 0.75);
 }
-.blue-divider-color {
+%blue-divider-color {
   background: linear-gradient(#7AD9F5, #39A2DA);
   box-shadow: 0px 0px 4px rgba(122, 217, 245, 0.75);
 }
-.purple-divider-color {
+%purple-divider-color {
   background: linear-gradient(#B07ABC, #8D52A9);
   box-shadow: 0px 0px 4px rgba(176, 122, 188, 0.75);
 }
@@ -24,13 +24,13 @@
 
   }
   .top {
-    @extend .yellow-divider-color;
+    @extend %yellow-divider-color;
   }
   .mid {
-    @extend .blue-divider-color;
+    @extend %blue-divider-color;
   }
   .bottom {
-    @extend .purple-divider-color;
+    @extend %purple-divider-color;
   }
 }
 
@@ -50,10 +50,10 @@
 
 .blue .divider{
   .top, .bottom {
-    @extend .yellow-divider-color;
+    @extend %yellow-divider-color;
   }
 
   .mid {
-    @extend .purple-divider-color;
+    @extend %purple-divider-color;
   }
 }
