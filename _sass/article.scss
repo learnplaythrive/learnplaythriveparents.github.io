@@ -55,6 +55,10 @@
   .pinch {
     width: 50%;
     margin: 0 auto;
+
+    @media (max-width: $medium-rem) {
+      width: 80%;
+    }
   }
 
   .text-center {
