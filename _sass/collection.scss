@@ -8,10 +8,6 @@
       background-image: url('/assets/images/purple-squiggle-line.png');
     }
 
-    @media (max-width: $large-rem) {
-
-    }
-
     @media (min-width: $large-rem ) {
       padding: 0rem;
       grid-gap: 2rem;
@@ -30,6 +26,13 @@
     }
 
     .image {
+      display: none;
+    }
+
+    @media (min-width: $large-rem ) {
+      .image {
+        display: block;
+      }
     }
   }
 }
@@ -77,6 +80,14 @@
     }
   }
 
+  @media (max-width: $small-rem) {
+    .image {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  }
+
+
   .collection-item:nth-of-type(2n+1) {
     @include reverse;
   }
@@ -102,5 +113,15 @@
       color: $white;
     }
 
+  }
+
+  @media ( max-width: $medium-rem ) {
+    .content {
+      padding: 1rem;
+    }
+
+    .collection-item {
+      @include reverse;
+    }
   }
 }
