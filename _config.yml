@@ -48,6 +48,11 @@ plugins:
 kramdown:
   input: Kramdown
 
+collections:
+  trainings:
+    output: true
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

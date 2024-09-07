@@ -1,32 +1,32 @@
 <div class="container collection-item">
-    <div class="content">
-      {% if include.item.date %}
-      <div class="date">
-        {{ include.item.date | date: "%A %B %e, %Y" }}
-      </div>
-      {% endif %}
-      <h2>
-        <a href="{{include.item.url}}">
-          {{ include.item.title }}
-        </a>
-      </h2>
-      {% if include.item.author %}
-      <div class="author">
-        by {{ include.item.author }}
-      </div>
-      {% endif %}
-      {% if include.item.summary %}
-      <hr />
-      <p class="summary">
-        <a href="{{include.item.url}}">
-          {{ include.item.summary }}
-        </a>
-      </p>
-      {% endif %}
+  <div class="content">
+    {% if include.item.date %}
+    <div class="date">
+      {{ include.item.date | date: "%A %B %e, %Y" }}
     </div>
-    <div class="image">
+    {% endif %}
+    <h2>
       <a href="{{include.item.url}}">
-        <img src="{{ include.item.card_image }}">
+        {{ include.item.title }}
       </a>
+    </h2>
+    {% if include.item.author %}
+    <div class="author">
+      by {{ include.item.author }}
     </div>
+    {% endif %}
+    {% if include.item.summary %}
+    <hr />
+    <p class="summary">
+      <a href="{{include.item.url}}">
+        {{ include.item.summary | newline_to_br}}
+      </a>
+    </p>
+    {% endif %}
+  </div>
+  <div class="image">
+    <a href="{{include.item.url}}">
+      <img src="{{ include.item.card_image }}">
+    </a>
+  </div>
 </div>

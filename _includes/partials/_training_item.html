@@ -1,0 +1,24 @@
+<article class="training collection-item {{ include.item.color }}">
+  <div class="training-image">
+
+    <img src="{{training.layout_card}}">
+    <a href="{{ include.item.url }}">
+    </a>
+  </div>
+  <div class="content">
+    <div class="title">
+      <h3>{{ include.item.title }}</h3>
+      <h4>{{ include.item.subtitle }}</h4>
+    </div>
+    <hr />
+    <p>
+      {{ include.item.card_content | newline_to_br}}
+    </p>
+
+    <button>
+      <a href="{{ include.item.url}}" >
+        Learn more
+      </a>
+    </button>
+  </div>
+</article>

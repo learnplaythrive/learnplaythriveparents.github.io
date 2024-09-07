@@ -37,13 +37,15 @@
   }
 }
 
+.collection.articles, .collection.trainings {
+  a {
+    text-decoration: none
+  }
+}
+
 .collection.articles {
   .page-header {
     // background-color: $light-yellow;
-  }
-
-  a {
-    text-decoration: none
   }
 
   .collection-item {
@@ -63,8 +65,8 @@
       grid-template-columns: minmax(600px, 1fr) minmax(400px, 1fr);
     }
 
-    .content {
-      @media (min-width: $large-rem ) {
+    @media (min-width: $small-rem) {
+      .content {
         padding: 1rem;
       }
     }
@@ -116,12 +118,67 @@
   }
 
   @media ( max-width: $medium-rem ) {
-    .content {
-      padding: 1rem;
-    }
-
     .collection-item {
       @include reverse;
     }
   }
+
+}
+
+.collection.trainings {
+  .collection-items {
+    display: grid;
+    gap: 2rem;
+    margin: 0 auto;
+
+    @media (min-width: $medium-rem) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: $xlarge-rem) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .collection-item {
+    align-items: center;
+    padding: 0px;
+
+    .training-image {
+
+      img {
+        border-top-left-radius: var(--pico-border-radius);
+        border-top-right-radius: var(--pico-border-radius);
+        object-fit: fill;
+        width: 600px;
+      }
+    }
+
+    hr {
+      width: 200px;
+      margin: var(--pico-typography-spacing-vertical) auto;
+    }
+
+    .content {
+      padding: 0.5rem 1rem;
+      margin-bottom: 1rem;
+
+      h3 {
+        margin-bottom: 1rem;
+      }
+
+      a {
+        display: inline-block;
+        color: $white;
+      }
+
+      button {
+        margin: 0 auto;
+        display: block;
+      }
+
+    }
+  }
+
+
 }

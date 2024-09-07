@@ -1,10 +1,17 @@
 @import "variables";
 
+
 :root {
   --pico-font-family-sans-serif: "Source Sans 3", sans-serif, var(--pico-font-family-emoji);
-  --pico-primary: $blue;
   --pico-border-width: 0.15rem;
   --pico-border-radius: 2rem;
+}
+
+/* have to use string interpolation here for root */
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+  --pico-primary: #{$blue};
+  --pico-primary-background: #{$blue};
 }
 
 .body {
@@ -30,7 +37,6 @@ hr {
   background-image: url('/assets/images/blue-squiggle-line.png');
   background-size: contain;
 }
-
 
 blockquote {
   font-family: $alt-text-family;

@@ -1,193 +1,195 @@
 @import "variables";
 
-h1, h2 {
-  letter-spacing: 0.5px;
-}
-
-p {
-  letter-spacing: 0.45px;
-}
-
-section.blue {
-  background-color: $light-blue;
-  color: $white-text-color;
-
-  h1, p{
-    --pico-color: $text-white;
-  }
-
-  h1 {
+.home {
+  h1, h2 {
     letter-spacing: 0.5px;
   }
 
   p {
-    font-family: $alt-text-family;
     letter-spacing: 0.45px;
   }
-}
 
-.cta {
-  display: grid;
-  align-items: center;
-  padding: 2rem 0;
-  min-height: 400px;
+  section.blue {
+    background-color: $light-blue;
+    color: $white-text-color;
 
-  .divider {
-    display: none;
-  }
-
-  @media (max-width: $large-rem) {
-
-  }
-
-  @media (min-width: $large-rem ) {
-    grid-gap: 2rem;
-    grid-template-columns: minmax(600px, 1fr) 1fr;
-    padding: 1rem 0;
-  }
-
-  @media (min-width: $xlarge-rem) {
-    grid-gap: 4rem;
-    grid-template-columns: minmax(600px, 1fr) 30px minmax(400px, 1fr);
-    min-height: 600px;
-    .divider {
-      display: block;
-    }
-  }
-}
-
-section.blockquote {
-  margin-top: 50px;
-
-  @media (min-width: $large-rem ) {
-    .container {
-      width: 40rem;
-    }
-  }
-
-}
-
-.section-divider {
-  margin-bottom: 3rem;
-}
-
-
-
-.yellow {
-  .yellow-content {
-    display: grid;
-    background-color: $yellow;
-    padding: 1rem;
-    letter-spacing: 0.5px;
-    align-items: center;
-
-    .yellow-copy {
-      padding: 1rem;
+    h1, p{
+      --pico-color: $text-white;
     }
 
-    p:last-of-type {
-      padding-top: 1rem;
-      text-align: center;
-      font-size: 1.25rem;
+    h1 {
+      letter-spacing: 0.5px;
     }
 
-    .button-space {
-      text-align: center;
-      padding-bottom: 1rem;
-
-      button {
-        color: $white;
-        background-color: $purple;
-        border-color: $light-purple;
-      }
-    }
-
-    @media (min-width: $large-rem) {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-    }
-  }
-}
-
-.community-and-email {
-  > .container:first-of-type {
-    position: relative;
-  }
-
-  .community-section {
-    display: grid;
-
-    @media (min-width: $xlarge-rem) {
-      grid-gap: 2rem;
-      grid-template-columns: 1fr 400px;
-      padding: 1rem 0;
-    }
-  }
-  .community-copy {
-    margin-bottom: 2rem;
-
-    h2 {
+    p {
       font-family: $alt-text-family;
-    }
-
-    div {
-      text-align: center;
-
-      button:hover {
-        background-color: #CBEAFF;
-      }
+      letter-spacing: 0.45px;
     }
   }
 
-  .right-color-splash {
-    @media (min-width: $xlarge-rem) {
-      position: absolute;
-      background-color: $purple;
-      right: 0px;
-      top: 0px;
-      max-width: 400px;
-      width: 20vw;
-      height: 100%;
-      z-index: -1;
-    }
-  }
-
-  .horizontal.section-divider {
-    @media (min-width: $xlarge-rem) {
-      display: grid;
-
-      grid-gap: 2rem;
-      grid-template-columns: 1fr 400px;
-      padding: 1rem 0;
-    }
-  }
-
-  .email {
+  .cta {
     display: grid;
     align-items: center;
+    padding: 2rem 0;
+    min-height: 400px;
+
+    .divider {
+      display: none;
+    }
+
+    @media (max-width: $large-rem) {
+
+    }
 
     @media (min-width: $large-rem ) {
       grid-gap: 2rem;
-      grid-template-columns: 1fr 400px;
+      grid-template-columns: minmax(600px, 1fr) 1fr;
       padding: 1rem 0;
+    }
 
-      .rphoto {
+    @media (min-width: $xlarge-rem) {
+      grid-gap: 4rem;
+      grid-template-columns: minmax(600px, 1fr) 30px minmax(400px, 1fr);
+      min-height: 600px;
+      .divider {
         display: block;
       }
     }
+  }
 
-    @media (min-width: $xxlarge-rem) {
-      grid-template-columns: 1fr 600px;
+  section.blockquote {
+    margin-top: 50px;
+
+    @media (min-width: $large-rem ) {
+      .container {
+        width: 40rem;
+      }
+    }
+
+  }
+
+  .section-divider {
+    margin-bottom: 3rem;
+  }
+
+
+
+  .yellow {
+    .yellow-content {
+      display: grid;
+      background-color: $yellow;
+      padding: 1rem;
+      letter-spacing: 0.5px;
+      align-items: center;
+
+      .yellow-copy {
+        padding: 1rem;
+      }
+
+      p:last-of-type {
+        padding-top: 1rem;
+        text-align: center;
+        font-size: 1.25rem;
+      }
+
+      .button-space {
+        text-align: center;
+        padding-bottom: 1rem;
+
+        button {
+          color: $white;
+          background-color: $purple;
+          border-color: $light-purple;
+        }
+      }
+
+      @media (min-width: $large-rem) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+      }
     }
   }
 
-  .email-copy {
+  .community-and-email {
+    > .container:first-of-type {
+      position: relative;
+    }
 
-    .button-wrapper {
-      text-align: center;
+    .community-section {
+      display: grid;
 
-      button {
-        width: auto;
+      @media (min-width: $xlarge-rem) {
+        grid-gap: 2rem;
+        grid-template-columns: 1fr 400px;
+        padding: 1rem 0;
+      }
+    }
+    .community-copy {
+      margin-bottom: 2rem;
+
+      h2 {
+        font-family: $alt-text-family;
+      }
+
+      div {
+        text-align: center;
+
+        button:hover {
+          background-color: #CBEAFF;
+        }
+      }
+    }
+
+    .right-color-splash {
+      @media (min-width: $xlarge-rem) {
+        position: absolute;
+        background-color: $purple;
+        right: 0px;
+        top: 0px;
+        max-width: 400px;
+        width: 20vw;
+        height: 100%;
+        z-index: -1;
+      }
+    }
+
+    .horizontal.section-divider {
+      @media (min-width: $xlarge-rem) {
+        display: grid;
+
+        grid-gap: 2rem;
+        grid-template-columns: 1fr 400px;
+        padding: 1rem 0;
+      }
+    }
+
+    .email {
+      display: grid;
+      align-items: center;
+
+      @media (min-width: $large-rem ) {
+        grid-gap: 2rem;
+        grid-template-columns: 1fr 400px;
+        padding: 1rem 0;
+
+        .rphoto {
+          display: block;
+        }
+      }
+
+      @media (min-width: $xxlarge-rem) {
+        grid-template-columns: 1fr 600px;
+      }
+    }
+
+    .email-copy {
+
+      .button-wrapper {
+        text-align: center;
+
+        button {
+          width: auto;
+        }
       }
     }
   }

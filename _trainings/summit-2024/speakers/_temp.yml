@@ -1,0 +1,97 @@
+speakers:
+  -
+    title: I’m Not Getting Dressed!
+    subtitle: Empowering everyday strategies for sensory sensitive kid
+    file: _laura-petix.md
+    authors:
+      -
+        name: Laura Petix
+        pronouns: she/her
+        credentials: OTR/L
+        headshot: /assets/images/trainings/summit-2024/laura-petix.jpg
+
+  -
+    title: When Everything Feels Like a Threat
+    subtitle: Supporting Autistic PDAers to feel deeply safe
+    file: _casey-ehrlich.md
+    authors:
+      -
+        name: Casey Ehrlich
+        pronouns: she/her
+        credentials: PhD
+        headshot: /assets/images/trainings/summit-2024/casey-ehrlich.jpg
+  -
+    title: But I’m Not Hungry & Don’t Need to Pee!
+    subtitle: Helping your child feel the signals from inside of their body
+    file: _kim-clairy-and-kelly-mahler.md
+    authors:
+      -
+        name: Kim Clairy
+        pronouns: she/her
+        credentials: OTR/L
+        headshot: /assets/images/trainings/summit-2024/kim-clairy.jpg
+        -
+          name: Kelly Mahler
+          pronouns: she/her
+          credentials: OTR/L
+          headshot: /assets/images/trainings/summit-2024/kelly-mahler.jpg
+  -
+    title: I Want to Deeply Know My Non-Speaking Kid
+    subtitle: A stress-free parents’ guide to supporting AAC learning for *any* child
+    file: _karina-saechao.md
+    authors:
+      -
+        name: Karina Saechao
+        pronouns: she/her
+        credentials: CCC-SLAP
+        headshot: /assets/images/trainings/summit-2024/karina-saecho.jpg
+  -
+    title: Should We Limit Screens?
+    subtitle: A shame-free, science-driven approach for your autistic child
+    file: _amanda-diekman.md
+    authors:
+      -
+        name: Amanda Diekman
+        pronouns: she/her
+        credentials:
+        headshot: /assets/images/trainings/summit-2024/amanda-diekman.jpg
+  -
+    title: When Picture Schedules Don’t Work
+    subtitle:  A strengths-based approach to schedules for kids who really aren’t into pictures
+    file: _meg-ferrell.md
+    authors:
+      -
+        name: Meg Ferrell
+        pronouns: she/her
+        credentials: OTR/L
+        headshot: /assets/images/trainings/summit-2024/meg-ferrell.jpg
+  -
+    title: Here’s How My Kid Feels Included
+    subtitle:  Authentic advocacy skills to create inclusive social spaces for your Autistic child
+    file: _lindsay-teitelbaum.md
+    authors:
+      -
+        name: Lindsay Teitelbaum
+        pronouns: she/her
+        credentials: SLP
+        headshot: /assets/images/trainings/summit-2024/lindsay-teitelbaum.jpg
+  -
+    title: Taking Health Needs Seriously
+    subtitle: Health issues affecting Autistic kids and teens, and how they often get missed
+    file: _mel-houser.md
+    authors:
+      -
+        name: Mel Houser
+        pronouns: she/her
+        credentials: M.D.
+        headshot: /assets/images/trainings/summit-2024/mel-houser.jpg
+  -
+    title: Why Do They Need AAC When They Already Talk?
+    subtitle: How AAC access for kids who also speak creates opportunities for connection and rest
+    file: _alyssa-hillary-zisk.md
+    authors:
+      -
+        name: Alyssa Hillary Zisk
+        pronouns: she/her
+        credentials: PhD
+        headshot: /assets/images/trainings/summit-2024/alyssa-hillary-zisk.jpg
