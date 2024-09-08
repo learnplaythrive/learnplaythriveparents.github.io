@@ -8,7 +8,7 @@ image_path: /assets/images/planning.jpg
 ---
 
   {% for training in site.trainings %}
-    {% include partials/_training_item.html item=training %}
-    {% include partials/_training_item.html item=training %}
-    {% include partials/_training_item.html item=training %}
+    {% if training.show %}
+      {% include partials/_training_item.html item=training %}
+    {% endif %}
   {% endfor %}
