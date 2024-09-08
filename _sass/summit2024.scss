@@ -198,6 +198,17 @@
       color: inherit;
     }
   }
+
+  .not-quote {
+    margin: 1rem;
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    font-family: $alt-text-family;
+    position: relative;
+    letter-spacing: 0.75px;
+    border: 0px;
+    text-align: justify;
+  }
 }
 
 .summit-2024 {
