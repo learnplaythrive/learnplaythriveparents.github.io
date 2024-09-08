@@ -147,6 +147,10 @@
 
       img {
         border-radius: 8px;
+
+      }
+
+      @media (min-width: $small-rem) {
         max-width: 400px;
       }
 
