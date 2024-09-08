@@ -113,6 +113,8 @@
   }
 
   .speaker {
+    max-width: 48rem;
+
     h2 {
       color: #9451a0;
     }
@@ -141,6 +143,7 @@
 
       img {
         border-radius: 8px;
+        max-width: 400px;
       }
 
       @media (max-width: $large-rem) {
