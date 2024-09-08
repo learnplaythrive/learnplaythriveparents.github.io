@@ -1,6 +1,191 @@
 .summit {
-  hgroup>:not(:first-child):last-child {
-    font-size: 1.5rem;
+
+  :where(article,address,blockquote,dl,figure,form,ol,p,pre,table,ul)~:is(h2) {
+    margin-top: 2.75rem;
+  }
+
+  .hr-center {
+    margin: 0 auto;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    /* h1 { */
+    /*   color: #9451a0; */
+    /* } */
+
+    /* h3 { */
+    /*   color: #B37AB4; */
+    /* } */
+  }
+
+  .blue-header {
+    background-color: $light-blue;
+    display: grid;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    .content {
+      order: 2;
+    }
+
+    img {
+      order: 1;
+    }
+
+    hr {
+      background-image: url('/assets/images/yellow-squiggle-line.png');
+    }
+
+    @media (min-width: $large-rem ) {
+      padding: 0rem;
+      grid-gap: 2rem;
+      grid-template-columns: minmax(400px, 1fr) minmax(400px, 1fr);
+      margin-bottom: 2rem;
+
+      .content {
+        order: 1;
+      }
+
+      img {
+        order: 2;
+      }
+    }
+
+    .content {
+      padding: 2rem;
+
+      p {
+        color: $white-text-color;
+      }
+    }
+  }
+
+  .how-it-works {
+    display: grid;
+
+    margin-bottom: 2rem;
+
+    .sign-up {
+      background-color: $yellow;
+      padding: 1rem;
+      border-radius: 30px;
+    }
+
+    @media (min-width: $large-rem) {
+      grid-gap: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .for-you-if {
+    margin-top: 2rem;
+    display: grid;
+
+    margin-bottom: 2rem;
+
+    .sign-up {
+      background-color: $light-purple;
+      padding: 1rem;
+      border-radius: 30px;
+
+      h2, p {
+        color: $white;
+      }
+
+      button, a button {
+        background-color: $yellow;
+        color: $black;
+        border-color: $yellow;
+      }
+    }
+
+    @media (min-width: $large-rem) {
+      grid-gap: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .signup-form {
+    margin: 0 auto;
+  }
+
+  .speaker {
+    h2 {
+      color: #9451a0;
+    }
+
+    hgroup>:not(:first-child):last-child {
+      font-size: 1.5rem;
+      color: #B37AB4;
+    }
+
+    @media (min-width: $small-rem) {
+      padding: 1rem;
+    }
+
+    .content {
+      display: grid;
+      align-items: center;
+
+      @media (min-width: $large-rem) {
+        grid-gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .presenters {
+      display: grid;
+
+      img {
+        border-radius: 8px;
+      }
+
+      @media (max-width: $large-rem) {
+        img {
+          border-radius: 0px;
+        }
+
+        img:first-of-type {
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+        }
+
+        img:last-of-type {
+          border-bottom-left-radius: 8px;
+          border-bottom-right-radius: 8px;
+        }
+      }
+    }
+
+    .description {
+      margin-top: 1rem;
+    }
+  }
+
+
+  details {
+    padding: 0.25rem 0;
+    summary {
+      font-size: 1.5rem;
+      font-weight: bold;
+      line-height: 2rem;
+    }
+  }
+
+  .faqs {
+    p {
+      margin-bottom: 0px;
+    }
+    hr {
+      height: 0;
+      margin: var(--pico-typography-spacing-vertical) 0;
+      border: 0;
+      border-top: 1px solid var(--pico-muted-border-color);
+      color: inherit;
+    }
   }
 }
 

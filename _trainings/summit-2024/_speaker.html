@@ -1,22 +1,25 @@
-<div class="speaker container">
+<article class="speaker container">
   <hgroup>
     <h2>{{speaker.title}}</h2>
     <h3>{{speaker.subtitle}}</h3>
   </hgroup>
-  <div class="presenters">
-    {% for presenter in speaker.authors %}
-      <span>
-        {{ presenter.name }} ({{ presenter.pronouns }})
-        {% if presenter.credentials %}
-          , {{ presenter.credentials }}
-        {% endif %}
-      </span>
-    {% endfor %}
+
+  <div class="content">
+    <div class="presenters">
+      <div class="names">
+        {% for presenter in speaker.authors %}
+        <b>{{ presenter.name }}</b>{% if presenter.credentials %}, {{ presenter.credentials }}{% endif %} ({{ presenter.pronouns }})
+        {% if speaker.authors.last != presenter %} & {% endif %}
+        {% endfor %}
+      </div>
+      <div class="headshots">
+        {% for presenter in speaker.authors %}
+        <img src="{{presenter.headshot}}" alt="{{presenter.name}}">
+        {% endfor%}
+      </div>
+    </div>
+
+
+    <div class="description">{% include_relative summit-2024/speakers/{{speaker.file}} %}</div>
   </div>
-
-  <div class="description" markdown="1">{% include_relative summit-2024/speakers/{{speaker.file}} %}</div>
-
-
-  {{ speaker }}
-
-</div>
+</article>
