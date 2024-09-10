@@ -80,7 +80,7 @@
     }
   }
 
-  .for-you-if {
+  .for-you-if, .summit-footer {
     margin-top: 2rem;
     display: grid;
 
@@ -108,11 +108,17 @@
     }
   }
 
+  .summit-footer .sign-up {
+    background-color: $blue;
+  }
+
   .signup-form {
     margin: 0 auto;
   }
 
   .speaker {
+    max-width: 48rem;
+
     h2 {
       color: #9451a0;
     }
@@ -141,6 +147,11 @@
 
       img {
         border-radius: 8px;
+
+      }
+
+      @media (min-width: $small-rem) {
+        max-width: 400px;
       }
 
       @media (max-width: $large-rem) {
@@ -186,6 +197,17 @@
       border-top: 1px solid var(--pico-muted-border-color);
       color: inherit;
     }
+  }
+
+  .not-quote {
+    margin: 1rem;
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    font-family: $alt-text-family;
+    position: relative;
+    letter-spacing: 0.75px;
+    border: 0px;
+    text-align: justify;
   }
 }
 
