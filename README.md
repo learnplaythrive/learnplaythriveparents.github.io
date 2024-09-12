@@ -1,8 +1,5 @@
 # Reminders
 
-### Nameserver
-Cloudflare
-
 ### Todo
 - Fix SEO
 - Move to DO
@@ -15,3 +12,9 @@ https://stackedit.io/app#
 
 ### Tags to use when editing markdown
 `{:.cls}`
+
+### Steps for handling SEO
+- Put the following in the frontmatter (the stuff between the `---`)
+  - title: (your title)
+  - image: (this is the image for facebook/instagram)
+  - description: (and the summary)
