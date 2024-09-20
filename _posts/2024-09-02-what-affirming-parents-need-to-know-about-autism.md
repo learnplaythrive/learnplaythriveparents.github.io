@@ -7,6 +7,7 @@ summary: |
   You want your Autistic child to thrive as their authentic self. But so much of what you've been taught about autism is shaming, harmful, or simply incorrect. This guide will create clarity around language (including why we say "Autistic"), empathy, social skills, stimming, strengths-based approaches, and disclosing to your child that they are Autistic.
 image_folder: 'assets/images/posts/2024-09-02-what-affirming-parents-need-to-know-about-autism'
 card_image: 'assets/images/posts/2024-09-02-what-affirming-parents-need-to-know-about-autism/parents.jpg'
+image: 'assets/images/posts/2024-09-02-what-affirming-parents-need-to-know-about-autism/parents.jpg'
 ---
 
 
