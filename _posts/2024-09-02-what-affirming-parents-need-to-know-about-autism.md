@@ -189,6 +189,8 @@ If you're ready for your next step, join our [Facebook group](http://facebook.co
 
 Want a handout version of this page? Click [here]({{ page.image_folder | append: "/learn-play-thrive-parents-handout-what-is-nd-affirming-a-primer.pdf" | relative_url}}).
 
+For this handout in Spanish, click [here]({{ page.image_folder | append: "/learn-play-thrive-parents-handout-what-is-nd-affirming-a-primer-es.pdf" | relative_url}})
+
 **About the author**
 
 Meg Ferrell  (she/her) is an occupational therapist and the founder of Learn Play Thrive and Learn Play Thrive Parents. She cares deeply about person-affirming therapy and has spent the last five years interviewing and learning from Autistic adults to try and change the way OTs, SLPs, and mental health professionals support Autistic kids in their work. At LPT Parents, Meg is on a mission to bring accessible, affirming strategies directly to parents.
