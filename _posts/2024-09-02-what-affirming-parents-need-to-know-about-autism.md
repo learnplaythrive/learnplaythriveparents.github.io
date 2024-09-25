@@ -189,7 +189,7 @@ If you're ready for your next step, join our [Facebook group](http://facebook.co
 
 Want a handout version of this page? Click [here]({{ page.image_folder | append: "/learn-play-thrive-parents-handout-what-is-nd-affirming-a-primer.pdf" | relative_url}}).
 
-For this handout in Spanish, click [here]({{ page.image_folder | append: "/learn-play-thrive-parents-handout-what-is-nd-affirming-a-primer-es.pdf" | relative_url}})
+For this handout in Spanish, click [here]({{ page.image_folder | append: "/learn-play-thrive-parents-handout-what-is-nd-affirming-a-primer-es.pdf" | relative_url}}).
 
 **About the author**
 
