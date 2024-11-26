@@ -44,6 +44,7 @@ sass:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-redirect-from
 
 kramdown:
   input: Kramdown
@@ -51,6 +52,9 @@ kramdown:
 collections:
   trainings:
     output: true
+
+whitelist:
+  - jekyll-redirect-from
 
 
 
