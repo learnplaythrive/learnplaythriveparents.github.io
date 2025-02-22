@@ -58,6 +58,12 @@
     }
   }
 
+  .blue-header {
+    @extend .purple-header;
+
+    background-color: $blue;
+  }
+
   .instructor {
     margin-top: 1rem;
     max-width: 48rem;
