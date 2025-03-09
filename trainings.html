@@ -7,8 +7,16 @@ other: hello
 image_path: /assets/images/planning.jpg
 ---
 
-  {% for training in site.trainings %}
-    {% if training.show %}
-      {% include partials/_training_item.html item=training %}
-    {% endif %}
-  {% endfor %}
+
+{% for training in site.trainings %}
+  {% capture now_unix %}{{ 'now' | date: "%s" }}{% endcapture %}
+  {% capture begin_date %}{{ training.begin_date | date: "%s"}}{% endcapture %}
+  {% capture expiration_date %}{{ training.expiration_date | date: "%s"}}{% endcapture %}
+  {% if training.show %}
+    {% unless begin_date and begin_date > now_unix %}
+      {% unless end_date and end_date < now_unix %}
+        {% include partials/_training_item.html item=training %}
+      {% endunless %}
+    {% endunless %}
+  {% endif %}
+{% endfor %}
