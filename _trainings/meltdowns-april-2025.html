@@ -20,28 +20,42 @@ header_image: /assets/images/trainings/meltdowns/header.png
 sale_link: https://learnplaythrive.thrivecart.com/burnout/
 ---
 
-<div class="intro blue-header">
-  <div class="content">
-    <h1>
-      {{ page.title }}
-    </h1>
-    <p>
-      A meltdown is a full body response to feeling overwhelmed. In a meltdown, our kids' nervous systems are in survival mode. They are going to fight for their lives or flee for safety. One way or another, they are physically releasing the energy of their intense emotions. When this happens, what is in our control, and how can we respond to signal safety to their nervous system? How can we turn down the temperature and bring the child back to safety?
-    </p>
+<div class="live-event">
+  <div class="intro blue-header">
+    <div class="content">
+      <h1>
+        {{ page.title }}
+      </h1>
+      <h3 class="event-time">
+        {{ page.event_time | date: "%B %e, %Y at %l:%M%p ET"}}
+        <br/>
+        Recorded replay available.
+      </h3>
+      <p>
+        A meltdown is a full body response to feeling overwhelmed. In a meltdown, our kids' nervous systems are in survival mode. They are going to fight for their lives or flee for safety. One way or another, they are physically releasing the energy of their intense emotions. When this happens, what is in our control, and how can we respond to signal safety to their nervous system? How can we turn down the temperature and bring the child back to safety?
+      </p>
 
-    <p>
-      Join Amanda Diekman in a free, live session to learn a mindset shift and safety planning strategies to help you manage aggressive meltdowns in a way that helps bring your kid back to safety, without overextending your own nervous system.
-    </p>
+      <p>
+        Join Amanda Diekman in a free, live session to learn a mindset shift and safety planning strategies to help you manage aggressive meltdowns in a way that helps bring your kid back to safety, without overextending your own nervous system.
+      </p>
+    </div>
+    <img src="{{ page.header_image }}" alt="Adult and child playing doll house together">
   </div>
-  <img src="{{ page.header_image }}" alt="Adult and child playing doll house together">
-</div>
 
-<div style="max-width: 600px; margin: 0 auto;">
-  {% include_relative meltdowns-april-2025/_form.html %}
-</div>
+  <div class="signup-form" >
 
-{% include_relative burnout/_instructor.html %}
+    {% include_relative meltdowns-april-2025/_form.html %}
+    <footer>
+      Fill in your info to join the free event. We'll send the replay when it's over! You'll also join our email list for more helpful resources (unsubscribe anytime).
+    </footer>
+  </div>
 
-<div style="max-width: 600px; margin: 0 auto;">
-  {% include_relative meltdowns-april-2025/_form.html %}
+  {% include_relative burnout/_instructor.html %}
+
+  <div class="signup-form" >
+    {% include_relative meltdowns-april-2025/_form.html %}
+    <footer>
+      Fill in your info to join the free event. We'll send the replay when it's over! You'll also join our email list for more helpful resources (unsubscribe anytime).
+    </footer>
+  </div>
 </div>

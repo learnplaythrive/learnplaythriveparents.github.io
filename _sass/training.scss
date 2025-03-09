@@ -1,5 +1,4 @@
 .training {
-
   button {
     color: $white;
     border-color: $white;
@@ -199,5 +198,18 @@
       }
       margin-bottom: 0rem;
     }
+  }
+}
+
+.live-event {
+  .signup-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  h3.event-time {
+    color: $yellow;
+  }
+  footer {
+    font-size: .75em;
   }
 }
