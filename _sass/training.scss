@@ -61,6 +61,21 @@
     @extend .purple-header;
 
     background-color: $blue;
+
+    ::-moz-selection { /* Code for Firefox */
+      color: $blue;
+      background: $white;
+    }
+
+    ::selection {
+      color: $blue;
+      background: $white;
+    }
+
+    a {
+      color: $yellow;
+    }
+
   }
 
   .instructor {
