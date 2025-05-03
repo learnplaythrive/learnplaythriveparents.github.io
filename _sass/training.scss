@@ -78,6 +78,38 @@
 
   }
 
+  .yellow-header {
+    @extend .purple-header;
+
+    background-color: $yellow;
+
+    ::-moz-selection { /* Code for Firefox */
+      color: $black;
+      background: $blue;
+    }
+
+    ::selection {
+      color: $black;
+      background: $blue;
+    }
+
+    a {
+      color: $purple;
+    }
+
+    button {
+      background-color: $purple;
+      color: $white;
+    }
+
+    .content {
+      p, h1 {
+        color: $black;
+      }
+    }
+
+  }
+
   .instructor {
     margin-top: 1rem;
     max-width: 48rem;
@@ -234,7 +266,7 @@
   }
 }
 
-.training.distress {
+.training.distress, .training.sensory {
   .signup-form {
     margin: 0 auto;
     margin-bottom: 100px;
@@ -262,4 +294,73 @@
       }
     }
   }
+}
+
+
+.training.sensory {
+  .part {
+    .card-row-2 {
+      display: grid;
+
+      @media (min-width: $large-rem ) {
+        padding: 0rem;
+        grid-gap: 2rem;
+        grid-template-columns: minmax(400px, 1fr) minmax(400px, 1fr);
+      }
+    }
+    .card-row {
+      @media (min-width: $large-rem ) {
+        margin-bottom: 2rem;
+        width: 100%;
+      }
+    }
+
+    .card {
+      background-color: $yellow;
+      font-color: $black;
+      padding: 1rem;
+      margin-bottom: 2rem;
+
+      border-top-left-radius: 1.5rem;
+      border-bottom-right-radius: 1.5rem;
+
+
+      .title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+
+        &::after {
+          display: block;
+          background-size: 150px 10px;
+          height: 10px;
+          width: 150px;
+          background-image: url(/assets/images/purple-squiggle-line.png);
+          content: "";
+          text-align: center;
+        }
+      }
+
+      &.purple, &.purple p {
+        background-color: $purple;
+        color: $white;
+
+        .title::after {
+          background-image: url(/assets/images/yellow-squiggle-line.png);
+        }
+      }
+
+
+
+      &.blue, &.blue p {
+        background-color: $blue;
+        color: $white;
+
+        .title::after {
+          background-image: url(/assets/images/yellow-squiggle-line.png);
+        }
+      }
+    }
+  }
+
 }
