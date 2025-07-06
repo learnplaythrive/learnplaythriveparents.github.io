@@ -4,6 +4,10 @@
     <div class="date">
       {{ include.item.event_time | date: "%A %B %e, %Y" }}
     </div>
+    {% elsif include.item.date %}
+    <div class="date">
+      {{ include.item.date | date: "%A %B %e, %Y" }}
+    </div>
     {% endif %}
     <h2>
       <a href="{{include.item.url}}">
