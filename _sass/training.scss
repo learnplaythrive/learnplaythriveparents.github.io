@@ -16,6 +16,11 @@
     align-items: center;
     margin-bottom: 2rem;
 
+    h3 {
+      color: $white;
+      font-size: 1.2rem;
+    }
+
     .content {
       order: 2;
     }
@@ -293,7 +298,7 @@
     margin: 0 auto;
     width: 80%;
   }
-  
+
   .signup-form {
     margin: 0 auto;
     margin-bottom: 100px;
