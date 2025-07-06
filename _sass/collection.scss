@@ -48,6 +48,16 @@
     // background-color: $light-yellow;
   }
 
+  @mixin reverse {
+    .content {
+      order: 2;
+    }
+
+    .image {
+      order: 1;
+    }
+  }
+  
   .collection-item {
     // padding: 1rem;
     display: grid;
@@ -70,16 +80,7 @@
         padding: 1rem;
       }
     }
-  }
-
-  @mixin reverse {
-    .content {
-      order: 2;
-    }
-
-    .image {
-      order: 1;
-    }
+    @include reverse;
   }
 
   @media (max-width: $small-rem) {
@@ -91,7 +92,7 @@
 
 
   .collection-item:nth-of-type(2n+1) {
-    @include reverse;
+    // @include reverse;
   }
 
   .collection-item:nth-of-type(4n-3) {

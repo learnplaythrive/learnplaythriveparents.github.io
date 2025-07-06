@@ -52,6 +52,8 @@ kramdown:
 collections:
   trainings:
     output: true
+  posts:
+    output: true
 
 whitelist:
   - jekyll-redirect-from

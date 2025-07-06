@@ -1,0 +1,22 @@
+---
+layout: collection
+collection_type: articles
+subtext: |
+  Learn neurodiversity-affirming parenting strategies to help your Autistic child thrive in their daily life and routines.
+other: hello
+image_path: assets/images/planning.jpg
+---
+
+{%- assign trainings = site.trainings | where: "categories", "resource"%}
+{%- assign articles = site.posts %}
+{%- assign resources = trainings | concat: articles | sort: 'date' | reverse -%}
+
+{% for resource in resources %}
+  {% if resource.layout == "article" %}
+    {% include partials/_article_list.html item=resource %}
+  {% endif %}
+
+  {% if resource.layout == "training" %}
+    {% include partials/_training_resource.html item=resource %}
+  {% endif %}
+{% endfor %}
