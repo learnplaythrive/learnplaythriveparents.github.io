@@ -1,13 +1,14 @@
 ---
 layout: collection
-collection_type: articles
+collection_type: resources
 subtext: |
   Learn neurodiversity-affirming parenting strategies to help your Autistic child thrive in their daily life and routines.
 other: hello
 image_path: assets/images/planning.jpg
 ---
 
-{%- assign trainings = site.trainings | where: "categories", "resource"%}
+{% capture now_unix %}{{ 'now' | date: "%s" }}{% endcapture %}
+{%- assign trainings = site.trainings | where: "categories", "resource"  %}
 {%- assign articles = site.posts %}
 {%- assign resources = trainings | concat: articles | sort: 'date' | reverse -%}
 
@@ -17,6 +18,9 @@ image_path: assets/images/planning.jpg
   {% endif %}
 
   {% if resource.layout == "training" %}
-    {% include partials/_training_resource.html item=resource %}
+    {% capture event_time %}{{ resource.event_time | date: "%s"}}{% endcapture %}
+    {% if event_time < now_unix %}
+      {% include partials/_training_resource.html item=resource %}
+    {% endif %}
   {% endif %}
 {% endfor %}
