@@ -293,12 +293,18 @@
   }
 }
 
-.training.distress, .training.sensory {
+.training.distress, .training.sensory, .training.include {
   .for-you-if, .blockquote {
     margin: 0 auto;
     width: 80%;
   }
+}
 
+.training.connect .signup-form {
+  max-width: 1000px;
+}
+
+.training.distress, .training.sensory, .training.connect, .training.include {
   .signup-form {
     margin: 0 auto;
     margin-bottom: 100px;
