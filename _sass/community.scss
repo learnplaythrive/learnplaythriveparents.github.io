@@ -1,0 +1,69 @@
+.in-the-community .content.narrow {
+  margin: 0 auto;
+  width: 100%;
+
+  @media (min-width: $large-rem) and (max-width:$xlarge-rem) {
+    width: 90%;
+  }
+
+  @media (min-width: $xlarge-rem ) {
+    width: 60%;
+  }
+
+  li {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.in-the-community {
+  margin-top: 3rem;
+
+  .instructors {
+    display: grid;
+    align-items: center;
+    margin: 0 auto;
+
+    @media (min-width: $large-rem) {
+      max-width: 900px;
+      column-gap: 2rem;
+      align-items: start;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .instructor {
+      h2 {
+        font-weight: 500;
+        span {
+          font-weight: 700;
+        }
+      }
+
+      .instructor-photo {
+        &.crop-amanda {
+          overflow: hidden;
+          height: 475px;
+
+          img {
+            margin-top: -70px;
+            object-fit: cover;
+          }
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+
+      max-width: 21rem;
+
+      .content {
+        @media (min-width: $large-rem) {
+          grid-template-columns: auto;
+        }
+      }
+    }
+  }
+
+}
