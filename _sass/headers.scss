@@ -67,7 +67,6 @@ nav {
     ul:last-child {
       li {
         text-align: right;
-        width: 100%;
       }
     }
   }
@@ -96,22 +95,40 @@ header.default nav {
     width: 100%;
     text-align: center;
   }
+
   flex-direction: column-reverse;
 
-  ul:last-of-type {
+  .show-on-small {
     display: none;
+    @media (max-width: $medium-rem) {
+      display: inline-block;
+    }
+  }
+
+  .hide-on-small {
+    display: flex;
+
+    ul:last-child li {
+      text-align: left;
+      width: auto;
+    }
+
+    @media (max-width: $medium-rem) {
+      display: none;
+    }
   }
 
   @media (min-width: $medium-rem) {
     flex-direction: row;
 
     ul, ul:last-of-type {
-      display: block;
+      display: flex;
+    }
+
+    ul:last-of-type menu {
+      display: flex;
     }
   }
-
-
-  // flex-direction: row-reverse;
 }
 
 header {
