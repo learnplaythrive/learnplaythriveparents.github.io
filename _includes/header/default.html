@@ -4,6 +4,9 @@
       <menu>
         <li><a href="{{ 'resources' | relative_url }}"><strong>Free Resources</strong></a></li>
         <li><a href="{{ 'trainings' | relative_url}}"><strong>Trainings</strong></a></li>
+        <div class="show-on-small">
+          <li><a href="{{ 'community' | relative_url}}"><strong>Community</strong></a></li>
+        </div>
       </menu>
     </ul>
     <ul>
@@ -11,8 +14,9 @@
     </ul>
     <ul class="menu">
       <menu>
-        <li><a href="{{ 'community' | relative_url}}"><strong>Podcast</strong></a></li>
-      <li><a href="{{ 'community' | relative_url}}"><strong>Community</strong></a></li>
+        <div class="hide-on-small">
+          <li><a href="{{ 'community' | relative_url}}"><strong>Community</strong></a></li>
+        </div>
       </menu>
     </ul>
   </nav>

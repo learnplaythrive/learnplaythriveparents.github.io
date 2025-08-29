@@ -96,6 +96,8 @@ header.default nav {
     text-align: center;
   }
 
+  flex-direction: column-reverse;
+
   .show-on-small {
     display: none;
     @media (max-width: $medium-rem) {
@@ -114,11 +116,6 @@ header.default nav {
     @media (max-width: $medium-rem) {
       display: none;
     }
-  }
-  flex-direction: column-reverse;
-
-  ul:last-of-type {
-    display: none;
   }
 
   @media (min-width: $medium-rem) {
