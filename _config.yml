@@ -58,7 +58,11 @@ collections:
 whitelist:
   - jekyll-redirect-from
 
-
+defaults:
+  - scope:
+      type: pages
+    values:
+      hidden: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

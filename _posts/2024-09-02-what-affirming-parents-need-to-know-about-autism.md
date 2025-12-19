@@ -3,6 +3,7 @@ layout: article
 title:  "What Affirming Parents Need to Know About Autism"
 date:   2024-09-02 11:07:40 -0400
 author: Meg Ferrell
+published: false
 summary: |
   You want your Autistic child to thrive as their authentic self. But so much of what you've been taught about autism is shaming, harmful, or simply incorrect. This guide will create clarity around language (including why we say "Autistic"), empathy, social skills, stimming, strengths-based approaches, and disclosing to your child that they are Autistic.
 image_folder: 'assets/images/posts/2024-09-02-what-affirming-parents-need-to-know-about-autism'
